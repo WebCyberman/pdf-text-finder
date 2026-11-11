@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
-import fitz  # PyMuPDF
+#import fitz  # PyMuPDF
+import pymupdf
 import os
 import threading
 import platform
@@ -75,7 +76,7 @@ class PDFSearchApp:
             if fichier.lower().endswith(".pdf"):
                 chemin_complet = os.path.join(dossier, fichier)
                 try:
-                    with fitz.open(chemin_complet) as doc:
+                    with pymupdf.open(chemin_complet) as doc:
                         texte = ""
                         for page in doc:
                             texte += page.get_text()

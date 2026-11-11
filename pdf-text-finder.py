@@ -1,8 +1,9 @@
-import fitz  # PyMuPDF
+#import fitz  # PyMuPDF
+import pymupdf
 import os
 
 # 📁 Dossier contenant les PDF
-dossier = r"\\192.168.0.60\Projets\E200312 - Elaboration d'un BioSensor (BioCapteur) avec système de mesure\Documentation\Publications\EIS"
+dossier = r"\\192.168.0.100\Dossier"
 
 # 🔍 Mot ou phrase à rechercher (insensible à la casse)
 mot_cle = "trunk".lower()
@@ -15,7 +16,7 @@ for fichier in os.listdir(dossier):
     if fichier.lower().endswith(".pdf"):
         chemin_pdf = os.path.join(dossier, fichier)
         try:
-            with fitz.open(chemin_pdf) as doc:
+            with pymupdf.open(chemin_pdf) as doc:
                 texte = ""
                 for page in doc:
                     texte += page.get_text()
