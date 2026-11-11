@@ -1,0 +1,6 @@
+python -m PyInstaller --onefile --noconsole nom_du_script.py
+
+Avec UPX (https://github.com/upx/upx/releases/tag/v5.0.2)
+---------------------------------------------------------
+
+pyinstaller --onefile --noconsole --upx-dir="C:\Program Files\upx" ton_script.py
