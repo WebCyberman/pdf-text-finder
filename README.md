@@ -237,7 +237,7 @@ L'outil UPX permet de réduire significativement la taille finale de l'exécutab
 
 MIT License
 
-Copyright (c) 2026 Guy-Olivier Gétaz
+Copyright (c) 2026 WebCyberman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -261,6 +261,6 @@ SOFTWARE.
 
 # 👤 Auteur
 
-**Guy-Olivier Gétaz**
+**WebCyberman**
 
 Développé en Python avec **PyMuPDF** et **Tkinter** pour faciliter la recherche textuelle dans des collections de fichiers PDF.
